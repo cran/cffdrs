@@ -1,4 +1,4 @@
-f9e2f9c38e163243ab67ae6264aa381a *DESCRIPTION
+5e15805a30f6659db45de657696e4554 *DESCRIPTION
 6ca775cec153f95199f3ea6ec3c9b6c9 *NAMESPACE
 795f32219f3526e4e70c2993b8b3c9d8 *R/BEcalc.r
 5cc8136154e67630eb855e409d4a1015 *R/BROScalc.r
@@ -25,9 +25,9 @@ ab46844668c0778d942ae70451e46e9d *R/fbp.r
 506d31a89750d378f37b584a91bf7eb1 *R/fbpRaster.r
 46cf2366a0573aea838d18a3d91e3d49 *R/ffmcCalc.R
 6815845e9ffb88b0455c96d3fad33440 *R/fireSeason.r
-c422bb34fefeeeadfd1b9653756d2338 *R/fwi.r
+0a4e05e02e8d7d55dca441aac31d6dc3 *R/fwi.r
 f8b70fd1c4b2f261bd0cc5059fbf4c0a *R/fwiCalc.R
-7e6faedbacef97a9dd67d813eae39ecc *R/fwiRaster.r
+8c2a7a93edd66578088df1309934e500 *R/fwiRaster.r
 cef4c3a8a97da43db0e07398e11ceba5 *R/gfmc.r
 6ebb907beb76e9fb9898abcb691b782f *R/hffmc.r
 8c32dae80c56c35af3e82a2982b073c8 *R/hffmcRaster.r
@@ -45,15 +45,15 @@ ad4831981c512ef16e720dbdc2ddbafa *inst/extdata/test_rast_day01.tif
 e1f8d8d78377a57d5f486f38d94def0b *inst/extdata/test_rast_day02.tif
 ad4831981c512ef16e720dbdc2ddbafa *inst/extdata/test_rast_hour01.tif
 e1f8d8d78377a57d5f486f38d94def0b *inst/extdata/test_rast_hour02.tif
-86768f72f152c538f0764bad935707fa *man/cffdrs-package.Rd
+6c61fe7684166431e2212391bfe66772 *man/cffdrs-package.Rd
 0b3bd680274266b5bb2e83990f7f9ab3 *man/fbp.Rd
 ed49874db2127b1530af17110586c1b4 *man/fbpRaster.Rd
 178a9a5b20ecbbace013280d9e120a16 *man/fireSeason.Rd
 c539451d4988df6aec740a6d933a2aa5 *man/fwi.Rd
-b1d3d0a01740d14495c98b1bd00a6539 *man/fwiRaster.Rd
+1d55053fc8d6d8a5cb65e4c5ffcba5f3 *man/fwiRaster.Rd
 f5a549933aa2658486029b1e6a164fa1 *man/gfmc.Rd
 63d46c9e3c2128ee1a12c009e21e4c4a *man/hffmc.Rd
-4556eb90754f23338eb9850686a939f9 *man/hffmcRaster.Rd
+d43876de1260487ea0b7ade842272027 *man/hffmcRaster.Rd
 65649c338773f0a2a9c28af458abf1bc *man/sdmc.Rd
 b4fca2373f26b95316522895a6924001 *man/test_fbp.Rd
 6c2a59deed585a4cc382ad64285bc92a *man/test_fbpRaster.Rd
