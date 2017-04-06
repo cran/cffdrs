@@ -1,4 +1,4 @@
-5e15805a30f6659db45de657696e4554 *DESCRIPTION
+41e7afac3143416123654a53d17ffc81 *DESCRIPTION
 6ca775cec153f95199f3ea6ec3c9b6c9 *NAMESPACE
 795f32219f3526e4e70c2993b8b3c9d8 *R/BEcalc.r
 5cc8136154e67630eb855e409d4a1015 *R/BROScalc.r
@@ -14,7 +14,7 @@ be6eac22a9336162b5cd16afbc60ab0a *R/ISIcalc.r
 960df708b0b1034d0623eddd44535e76 *R/LBtcalc.r
 5a6bfe9ab1afbad02d1fbcb6d9894cb2 *R/ROScalc.r
 0c370d27ee352db843855c0461ab1192 *R/ROStcalc.r
-5b5fc1d11c896e863a3679321e015947 *R/ROSthetacalc.r
+0fba9a9449ebb97e1ecbbf8584a45957 *R/ROSthetacalc.r
 aa3f859b0c115e6243d759707bb12c35 *R/SFCcalc.r
 c321565b3c188258a9e254a789a543ce *R/Slopecalc.r
 bc6c9d844d27d8e24a803ff73e52bb2d *R/TFCcalc.r
@@ -40,12 +40,13 @@ be2c30c7c26a3bd9c8aa1d14d53fcf82 *data/test_fwi.csv.gz
 27e6b8aa6c10d1303dca20876f9b9f29 *data/test_sdmc.csv.gz
 ab84a1fd8c2567b14fddd2c4159d1e75 *data/test_wDC.csv.gz
 8b9e8e1e943ba2c41836592912885eef *data/test_wDC_fs.csv.gz
+1f2a8d29935cffd22d723897d812d8db *inst/CITATION
 3cf3c3f7758cc32e45fdd898b98145fe *inst/extdata/test_fbpRaster.tif
 ad4831981c512ef16e720dbdc2ddbafa *inst/extdata/test_rast_day01.tif
 e1f8d8d78377a57d5f486f38d94def0b *inst/extdata/test_rast_day02.tif
 ad4831981c512ef16e720dbdc2ddbafa *inst/extdata/test_rast_hour01.tif
 e1f8d8d78377a57d5f486f38d94def0b *inst/extdata/test_rast_hour02.tif
-6c61fe7684166431e2212391bfe66772 *man/cffdrs-package.Rd
+91c64db2e7db00fe1c6651287b1a62bf *man/cffdrs-package.Rd
 0b3bd680274266b5bb2e83990f7f9ab3 *man/fbp.Rd
 ed49874db2127b1530af17110586c1b4 *man/fbpRaster.Rd
 178a9a5b20ecbbace013280d9e120a16 *man/fireSeason.Rd
