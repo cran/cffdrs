@@ -1,13 +1,13 @@
 Package: cffdrs
 Type: Package
 Title: Canadian Forest Fire Danger Rating System
-Version: 1.7.6
-Date: 2017-04-05
-Author: Xianli Wang, Alan Cantin, Marc-Andre Parisien, Mike Wotton, Kerry
-    Anderson, Brett Moore, and Mike Flannigan
+Version: 1.8.1
+Date: 2018-09-20
+Author: Xianli Wang, Alan Cantin, Marc-André Parisien, Mike Wotton, Kerry
+    Anderson, Brett Moore, Tom Schiks, and Mike Flannigan
 Maintainer: Alan Cantin <Alan.Cantin@Canada.ca>
-Depends: R(>= 3.2.2), rgdal, raster, foreach, data.table, spatial.tools
-Imports: doParallel
+Depends: R(>= 3.2.2), rgdal, raster, foreach, spatial.tools
+Imports: data.table, geosphere, doParallel
 Description: This project provides a group of new functions to calculate the
     outputs of the two main components of the Canadian Forest Fire Danger Rating
     System (CFFDRS) at various time scales: the Fire Weather Index (FWI) System and
@@ -17,10 +17,12 @@ License: GPL-2
 URL: https://r-forge.r-project.org/projects/cffdrs/
 BugReports: https://r-forge.r-project.org/tracker/?
  func=browse&group_id=1970&atid=5372
+Encoding: UTF-8
+RoxygenNote: 6.1.0
 Repository: CRAN
 Repository/R-Forge/Project: cffdrs
-Repository/R-Forge/Revision: 80
-Repository/R-Forge/DateTimeStamp: 2017-04-06 03:20:43
-Date/Publication: 2017-04-06 13:25:32 UTC
+Repository/R-Forge/Revision: 101
+Repository/R-Forge/DateTimeStamp: 2018-09-20 13:15:07
+Date/Publication: 2018-10-09 14:00:03 UTC
 NeedsCompilation: no
-Packaged: 2017-04-06 03:55:22 UTC; rforge
+Packaged: 2018-09-20 13:30:09 UTC; rforge
