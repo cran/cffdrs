@@ -1,4 +1,4 @@
-ff89c28e65fffb2f112f5ffaa9971c52 *DESCRIPTION
+0644774c7adebfb5bdac9ace10a94b7d *DESCRIPTION
 f6a4d523d1299d397bf00aeacd853862 *NAMESPACE
 795f32219f3526e4e70c2993b8b3c9d8 *R/BEcalc.r
 5cc8136154e67630eb855e409d4a1015 *R/BROScalc.r
@@ -19,7 +19,7 @@ aa3f859b0c115e6243d759707bb12c35 *R/SFCcalc.r
 c321565b3c188258a9e254a789a543ce *R/Slopecalc.r
 bc6c9d844d27d8e24a803ff73e52bb2d *R/TFCcalc.r
 07798aeaecfbe7f7769764524342b14e *R/buiCalc.R
-2627a407114ba2653dd1604b9641a55d *R/dcCalc.R
+75e8bcdb37140b63751c6434ed07f854 *R/dcCalc.R
 78d7d00281f6d295fcecc93053927ed9 *R/direction.r
 b6bfa323815efa1326f5621ee6d41ec9 *R/dmcCalc.R
 ab46844668c0778d942ae70451e46e9d *R/fbp.r
@@ -51,7 +51,7 @@ ad4831981c512ef16e720dbdc2ddbafa *inst/extdata/test_rast_day01.tif
 e1f8d8d78377a57d5f486f38d94def0b *inst/extdata/test_rast_day02.tif
 ad4831981c512ef16e720dbdc2ddbafa *inst/extdata/test_rast_hour01.tif
 e1f8d8d78377a57d5f486f38d94def0b *inst/extdata/test_rast_hour02.tif
-f4c1da0963bef8b28a9e8a15243ce1ce *man/cffdrs-package.Rd
+913e60226cbb113900efe7121ba01167 *man/cffdrs-package.Rd
 6ad310f8dc293cd596ab3b40e83dc898 *man/fbp.Rd
 d92a9e848d3cb2a113edc8ad27dd60af *man/fbpRaster.Rd
 65606aee5907a76cd8e958c92c93882a *man/fireSeason.Rd
