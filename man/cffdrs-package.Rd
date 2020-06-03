@@ -17,8 +17,8 @@ The FBP System (Forestry Canada Fire Danger Group 1992; Hirsch 1996) provides a 
 \tabular{ll}{
 Package: \tab cffdrs\cr
 Type: \tab Package\cr
-Version: \tab 1.8.6\cr
-Date: \tab 2019-05-09\cr
+Version: \tab 1.8.18\cr
+Date: \tab 2020-06-03\cr
 License: \tab GPL-2\cr
 }
 This package includes eleven functions. Seven functions, \code{\link{fwi}}, \code{\link{fwiRaster}}, \code{\link{hffmc}}, \code{\link{hffmcRaster}}, \code{\link{sdmc}}, \code{\link{gfmc}}, and \code{\link{wDC}} are used for FWI System calculation, whereas two functions, \code{\link{fbp}} and \code{\link{fbpRaster}} are used for FBP System calculation. One function, \code{\link{fireSeason}} determines fire season start and end dates based on weather. Two functions \code{\link{pros}} and \code{\link{lros}} are rate of spread and direction calculations across tiangles. These functions are not fully independent: their inputs overlap greatly and the users will have to provide FWI System outputs to calculate FBP System outputs. The fwi, fwiRaster, and sdmc functions calculate the outputs based on daily noon local standard time (LST) weather observations of temperature, relative humidity, wind speed, and 24-hour rainfall, as well as the previous day's moisture content. The hffmc, gfmc, and hffmcRaster functions calculate the outputs based on hourly weather observations of temperature, relative humidity, wind speed, and hourly rainfall, as well as the previous hour's weather conditions. The fbp and fbpRaster functions calculate the outputs of the FBP System based on given set of information about fire weather conditions (weather observations and their associated FWI System components), fuel type, and slope (optional).
@@ -61,7 +61,7 @@ Maintainer: Alan Cantin \email{Alan.Cantin@Canada.ca}
 \examples{
 #Calculating daily FWI with wintering DC 
 
-#This exercise demonstrates how to calculate daily FWI System variables given a chronical two years
+# This exercise demonstrates how to calculate daily FWI System variables given a chronical two years
 # daily fire weather observations from one weather station. In the example, we showed first how to 
 # decide fire season start and end dates with fireSeason, we then made overwintering DC adjustment
 # with wDC for the second fire season, and eventually calculated the daily FWI System variables over
@@ -89,7 +89,6 @@ fwi_fs_wDC <- function(input){
   theyears <- unique(fs$yr)
   
   for(curYr.row in 1:length(theyears)){
-    #curYr.row <- 2
     curYr <- theyears[curYr.row]
     curYr.d <- fs[fs$yr==curYr,]
     curYr.init <- data.frame(ffmc=80,dmc=10,dc=16) #set an initial startup values
