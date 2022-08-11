@@ -12,7 +12,7 @@ function (x, row = 1, nrows = 1, col = 1, ncols = (ncol(x) -
                                                      col + 1), lyrs = (1:nlayers(x))) 
 {
   single_filename <- NULL
-  if (class(x) == "RasterStack") {
+  if (is(x, "RasterStack")) {
     all_filenames <- sapply(x@layers, function(X) {
       filename(X)
     })
@@ -40,7 +40,7 @@ function (x, row = 1, nrows = 1, col = 1, ncols = (ncol(x) -
     return(out_matrix)
   }
   else {
-    if (class(x) == "RasterLayer" || nlayers(x) == 
+    if (is(x, "RasterLayer") || nlayers(x) == 
         1) 
       return(getValuesBlock(x, row = row, nrows = nrows, 
                             col = col, ncols = ncols))

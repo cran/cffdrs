@@ -57,7 +57,7 @@ Xianli Wang, Mike Wotton, Alan Cantin, Brett Moore, and Mike Flannigan
 }
 
 \references{
-Van Wagner, C.E. 1977. A method of computing fine fuel moisture content throughout the diurnal cycle. Environment Canada, Canadian Forestry Service, Petawawa Forest Experiment Station, Chalk River, Ontario. Information Report PS-X-69. \url{http://cfs.nrcan.gc.ca/pubwarehouse/pdfs/25591.pdf} 
+Van Wagner, C.E. 1977. A method of computing fine fuel moisture content throughout the diurnal cycle. Environment Canada, Canadian Forestry Service, Petawawa Forest Experiment Station, Chalk River, Ontario. Information Report PS-X-69. \url{https://cfs.nrcan.gc.ca/pubwarehouse/pdfs/25591.pdf} 
 }
 
 \seealso{

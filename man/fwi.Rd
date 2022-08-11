@@ -61,7 +61,7 @@ The first three outputs of the system (the Fire Fuel Moisture Code ({ffmc}), the
 
 The next three outputs of the System are relative (unitless) indicators of aspects of fire behavior potential: spread rate (the Initial Spread Index, isi), fuel consumption (the Build-up Index, bui) and fire intensity per unit length of fire front (the Fire Weather Index, fwi).  This final index, the fwi, is the component of the System used to establish the daily fire danger level for a region and communicated to the public.  This final index can be transformed to the Daily Severity Rating (dsr) to provide a more reasonably-scaled estimate of fire control difficulty.  
 
-Both the Duff Moisture Code (dmc) and Drought Code (dc) are influenced by day length (see Van Wagner 1987). Day length adjustments for different ranges in latitude can be used (as described in Lawson and Armitage 2008 (\url{http://cfs.nrcan.gc.ca/pubwarehouse/pdfs/29152.pdf})) and are included in this R function; latitude must be positive in the northern hemisphere and negative in the southern hemisphere.
+Both the Duff Moisture Code (dmc) and Drought Code (dc) are influenced by day length (see Van Wagner 1987). Day length adjustments for different ranges in latitude can be used (as described in Lawson and Armitage 2008 (\url{https://cfs.nrcan.gc.ca/pubwarehouse/pdfs/29152.pdf})) and are included in this R function; latitude must be positive in the northern hemisphere and negative in the southern hemisphere.
 
 The default initial (i.e., "start-up") fuel moisture code values (FFMC=85, DMC=6, DC=15) provide a reasonable set of conditions for most springtime conditions in Canada, the Northern U.S., and Alaska. They are not suitable for particularly dry winters and are presumably not appropriate for different parts of the world.
 }
@@ -83,11 +83,11 @@ Xianli Wang, Alan Cantin, Marc-André Parisien, Mike Wotton, Kerry Anderson, and
 }
 
 \references{
-1. Van Wagner, C.E. and T.L. Pickett. 1985. Equations and FORTRAN program for the Canadian Forest Fire Weather Index System. Can. For. Serv., Ottawa, Ont. For. Tech. Rep. 33. 18 p. \url{http://cfs.nrcan.gc.ca/pubwarehouse/pdfs/19973.pdf}
+1. Van Wagner, C.E. and T.L. Pickett. 1985. Equations and FORTRAN program for the Canadian Forest Fire Weather Index System. Can. For. Serv., Ottawa, Ont. For. Tech. Rep. 33. 18 p. \url{https://cfs.nrcan.gc.ca/pubwarehouse/pdfs/19973.pdf}
 
-2. Van Wagner, C.E. 1987. Development and structure of the Canadian forest fire weather index system. Forest Technology Report 35. (Canadian Forestry Service: Ottawa). \url{http://cfs.nrcan.gc.ca/pubwarehouse/pdfs/19927.pdf}
+2. Van Wagner, C.E. 1987. Development and structure of the Canadian forest fire weather index system. Forest Technology Report 35. (Canadian Forestry Service: Ottawa). \url{https://cfs.nrcan.gc.ca/pubwarehouse/pdfs/19927.pdf}
 
-3.  Lawson, B.D. and O.B. Armitage. 2008. Weather guide for the Canadian Forest Fire Danger Rating System. Nat. Resour. Can., Can. For. Serv., North. For. Cent., Edmonton, AB. \url{http://cfs.nrcan.gc.ca/pubwarehouse/pdfs/29152.pdf}
+3.  Lawson, B.D. and O.B. Armitage. 2008. Weather guide for the Canadian Forest Fire Danger Rating System. Nat. Resour. Can., Can. For. Serv., North. For. Cent., Edmonton, AB. \url{https://cfs.nrcan.gc.ca/pubwarehouse/pdfs/29152.pdf}
 
 }
 

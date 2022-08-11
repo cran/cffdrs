@@ -8,7 +8,7 @@
 \usage{data(test_fwi)}
 \format{A data frame containing 10 columns and 49 rows, including 1 header line}
 \source{
-\url{http://cfs.nrcan.gc.ca/pubwarehouse/pdfs/19973.pdf}
+\url{https://cfs.nrcan.gc.ca/pubwarehouse/pdfs/19973.pdf}
 }
 \references{
 1.	Van Wagner, CE. and T.L. Pickett. 1985. Equations and FORTRAN program for the Canadian Forest Fire Weather Index System. Can. For. Serv., Ottawa, Ont. For. Tech. Rep. 33. 18 p.

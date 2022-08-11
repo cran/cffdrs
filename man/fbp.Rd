@@ -90,50 +90,50 @@ Note that Wind Direction (WD) is the compass direction from which wind is coming
   \code{fbp} returns a dataframe with primary, secondary, or all output variables, a combination of the primary and secondary outputs. 
 
   Primary FBP output includes the following 8 variables:
-  \item{\verb{CFB    }}{Crown Fraction Burned by the head fire}
-  \item{\verb{CFC    }}{Crown Fuel Consumption [kg/m^2]}
-  \item{\verb{FD     }}{Fire description (S=Surface, I=Intermittent, C=Crown)}
-  \item{\verb{HFI    }}{Head Fire Intensity [kW/m]}
-  \item{\verb{RAZ    }}{Spread direction azimuth [degrees]}
-  \item{\verb{ROS    }}{Equilibrium Head Fire Rate of Spread [m/min]}
-  \item{\verb{SFC    }}{Surface Fuel Consumption [kg/m^2]}
-  \item{\verb{TFC    }}{Total Fuel Consumption [kg/m^2]}
+  \item{CFB    }{Crown Fraction Burned by the head fire}
+  \item{CFC    }{Crown Fuel Consumption [kg/m^2]}
+  \item{FD     }{Fire description (S=Surface, I=Intermittent, C=Crown)}
+  \item{HFI    }{Head Fire Intensity [kW/m]}
+  \item{RAZ    }{Spread direction azimuth [degrees]}
+  \item{ROS    }{Equilibrium Head Fire Rate of Spread [m/min]}
+  \item{SFC    }{Surface Fuel Consumption [kg/m^2]}
+  \item{TFC    }{Total Fuel Consumption [kg/m^2]}
 
   Secondary FBP System outputs include the following 34 raster layers. In order to calculate the reliable secondary outputs, depending on the outputs, optional inputs may have to be provided.  
-  \item{\verb{BE     }}{BUI effect on spread rate}
-  \item{\verb{SF     }}{Slope Factor (multiplier for ROS increase upslope)}
-  \item{\verb{ISI    }}{Initial Spread Index}
-  \item{\verb{FFMC   }}{Fine fuel moisture code [FWI System component]}
-  \item{\verb{FMC    }}{Foliar Moisture Content [\%]}
-  \item{\verb{Do     }}{Julian Date of minimum FMC}
-  \item{\verb{RSO    }}{Critical spread rate for crowning [m/min]}
-  \item{\verb{CSI    }}{Critical Surface Intensity for crowning [kW/m]}
-  \item{\verb{FROS   }}{Equilibrium Flank Fire Rate of Spread [m/min]}
-  \item{\verb{BROS   }}{Equilibrium Back Fire Rate of Spread [m/min]}
-  \item{\verb{HROSt  }}{Head Fire Rate of Spread at time hr [m/min]}
-  \item{\verb{FROSt  }}{Flank Fire Rate of Spread at time hr [m/min]}
-  \item{\verb{BROSt  }}{Back Fire Rate of Spread at time hr [m/min]}
-  \item{\verb{FCFB   }}{Flank Fire Crown Fraction Burned}
-  \item{\verb{BCFB   }}{Back Fire Crown Fraction Burned}
-  \item{\verb{FFI    }}{Equilibrium Spread Flank Fire Intensity [kW/m]}
-  \item{\verb{BFI    }}{Equilibrium Spread Back Fire Intensity [kW/m]}
-  \item{\verb{FTFC   }}{Flank Fire Total Fuel Consumption [kg/m^2]  }
-  \item{\verb{BTFC   }}{Back Fire Total Fuel Consumption [kg/m^2]  }
-  \item{\verb{DH     }}{Head Fire Spread Distance after time hr [m] }
-  \item{\verb{DB     }}{Back Fire Spread Distance after time hr [m] }
-  \item{\verb{DF     }}{Flank Fire Spread Distance after time hr [m] }
-  \item{\verb{TI     }}{Time to Crown Fire Initiation [hrs since ignition] }
-  \item{\verb{FTI    }}{Time to Flank Fire Crown initiation [hrs since ignition]}
-  \item{\verb{BTI    }}{Time to Back Fire Crown initiation [hrs since ignition]}
-  \item{\verb{LB     }}{Length to Breadth ratio}
-  \item{\verb{LBt    }}{Length to Breadth ratio after elapsed time hr }
-  \item{\verb{WSV    }}{Net vectored wind speed [km/hr]}
-  \item{\verb{TROS*  }}{Equilibrium Rate of Spread at bearing theta [m/min] }
-  \item{\verb{TROSt* }}{Rate of Spread at bearing theta at time t [m/min] }
-  \item{\verb{TCFB*  }}{Crown Fraction Burned at bearing theta }
-  \item{\verb{TFI*   }}{Fire Intensity at bearing theta [kW/m] }
-  \item{\verb{TTFC*  }}{Total Fuel Consumption at bearing theta [kg/m^2] }
-  \item{\verb{TTI*   }}{Time to Crown Fire initiation at bearing theta [hrs since ignition] }
+  \item{BE     }{BUI effect on spread rate}
+  \item{SF     }{Slope Factor (multiplier for ROS increase upslope)}
+  \item{ISI    }{Initial Spread Index}
+  \item{FFMC   }{Fine fuel moisture code [FWI System component]}
+  \item{FMC    }{Foliar Moisture Content [\%]}
+  \item{Do     }{Julian Date of minimum FMC}
+  \item{RSO    }{Critical spread rate for crowning [m/min]}
+  \item{CSI    }{Critical Surface Intensity for crowning [kW/m]}
+  \item{FROS   }{Equilibrium Flank Fire Rate of Spread [m/min]}
+  \item{BROS   }{Equilibrium Back Fire Rate of Spread [m/min]}
+  \item{HROSt  }{Head Fire Rate of Spread at time hr [m/min]}
+  \item{FROSt  }{Flank Fire Rate of Spread at time hr [m/min]}
+  \item{BROSt  }{Back Fire Rate of Spread at time hr [m/min]}
+  \item{FCFB   }{Flank Fire Crown Fraction Burned}
+  \item{BCFB   }{Back Fire Crown Fraction Burned}
+  \item{FFI    }{Equilibrium Spread Flank Fire Intensity [kW/m]}
+  \item{BFI    }{Equilibrium Spread Back Fire Intensity [kW/m]}
+  \item{FTFC   }{Flank Fire Total Fuel Consumption [kg/m^2]  }
+  \item{BTFC   }{Back Fire Total Fuel Consumption [kg/m^2]  }
+  \item{DH     }{Head Fire Spread Distance after time hr [m] }
+  \item{DB     }{Back Fire Spread Distance after time hr [m] }
+  \item{DF     }{Flank Fire Spread Distance after time hr [m] }
+  \item{TI     }{Time to Crown Fire Initiation [hrs since ignition] }
+  \item{FTI    }{Time to Flank Fire Crown initiation [hrs since ignition]}
+  \item{BTI    }{Time to Back Fire Crown initiation [hrs since ignition]}
+  \item{LB     }{Length to Breadth ratio}
+  \item{LBt    }{Length to Breadth ratio after elapsed time hr }
+  \item{WSV    }{Net vectored wind speed [km/hr]}
+  \item{TROS*  }{Equilibrium Rate of Spread at bearing theta [m/min] }
+  \item{TROSt* }{Rate of Spread at bearing theta at time t [m/min] }
+  \item{TCFB*  }{Crown Fraction Burned at bearing theta }
+  \item{TFI*   }{Fire Intensity at bearing theta [kW/m] }
+  \item{TTFC*  }{Total Fuel Consumption at bearing theta [kg/m^2] }
+  \item{TTI*   }{Time to Crown Fire initiation at bearing theta [hrs since ignition] }
 
 *These outputs represent fire behaviour at a point on the perimeter of an elliptical fire defined by a user input angle theta. theta represents the bearing of a line running between the fire ignition point and a point on the perimeter of the fire. It is important to note that in this formulation the theta is a bearing and does not represent the angle from the semi-major axis (spread direction) of the ellipse. This formulation is similar but not identical to methods presented in Wotton et al (2009) and Tymstra et al (2009).
 }
@@ -145,9 +145,9 @@ Xianli Wang, Alan Cantin, Marc-André Parisien, Mike Wotton, Kerry Anderson, and
 \references{
 1.  Hirsch K.G. 1996. Canadian Forest Fire Behavior Prediction (FBP) System: user's guide. Nat. Resour. Can., Can. For. Serv., Northwest Reg., North. For. Cent., Edmonton, Alberta. Spec. Rep. 7. 122p.
 
-2.  Forestry Canada Fire Danger Group. 1992. Development and structure of the Canadian Forest Fire Behavior Prediction System. Forestry Canada, Ottawa, Ontario Information Report ST-X-3. 63 p. \url{http://cfs.nrcan.gc.ca/pubwarehouse/pdfs/10068.pdf}
+2.  Forestry Canada Fire Danger Group. 1992. Development and structure of the Canadian Forest Fire Behavior Prediction System. Forestry Canada, Ottawa, Ontario Information Report ST-X-3. 63 p. \url{https://cfs.nrcan.gc.ca/pubwarehouse/pdfs/10068.pdf}
 
-3.  Wotton, B.M., Alexander, M.E., Taylor, S.W. 2009. Updates and revisions to the 1992 Canadian forest fire behavior prediction system. Nat. Resour. Can., Can. For. Serv., Great Lakes For. Cent., Sault Ste. Marie, Ontario, Canada. Information Report GLC-X-10, 45p. \url{http://publications.gc.ca/collections/collection_2010/nrcan/Fo123-2-10-2009-eng.pdf}
+3.  Wotton, B.M., Alexander, M.E., Taylor, S.W. 2009. Updates and revisions to the 1992 Canadian forest fire behavior prediction system. Nat. Resour. Can., Can. For. Serv., Great Lakes For. Cent., Sault Ste. Marie, Ontario, Canada. Information Report GLC-X-10, 45p. \url{https://publications.gc.ca/collections/collection_2010/nrcan/Fo123-2-10-2009-eng.pdf}
 
 4.  Tymstra, C., Bryce, R.W., Wotton, B.M., Armitage, O.B. 2009. Development and structure of Prometheus: the Canadian wildland fire growth simulation Model. Nat. Resour. Can., Can. For. Serv., North. For. Cent., Edmonton, AB. Inf. Rep. NOR-X-417.  
 }

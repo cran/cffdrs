@@ -30,7 +30,7 @@
   #
   #############################################################################
   #Eq. 1
-  wmo <- 147.2 * (101 - ffmc_yda)/(59.5 + ffmc_yda)
+  wmo <- 147.27723 * (101 - ffmc_yda)/(59.5 + ffmc_yda)
   #Eq. 2 Rain reduction to allow for loss in 
   #  overhead canopy
   ra <- ifelse(prec > 0.5, prec - 0.5, prec)

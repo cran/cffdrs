@@ -1,6 +1,7 @@
 exportPattern("^[[:alpha:]]+")
 import(raster)
 import(rgdal)
+importFrom(methods, is)
 importFrom(geosphere, bearing)
 importFrom(geosphere, distHaversine)
 importFrom(foreach, "%dopar%")

@@ -56,7 +56,7 @@ Xianli Wang, Mike Wotton, Alan Cantin, and Mike Flannigan
 \references{
 Wotton, B.M. 2009. A grass moisture model for the Canadian Forest Fire Danger Rating System. In: Proceedings 8th Fire and Forest Meteorology Symposium, Kalispell, MT Oct 13-15, 2009. Paper 3-2. \url{https://ams.confex.com/ams/pdfpapers/155930.pdf}
 
-Van Wagner, C.E. 1977. A method of computing fine fuel moisture content throughout the diurnal cycle. Environment Canada, Canadian Forestry Service, Petawawa Forest Experiment Station, Chalk River, Ontario. Information Report PS-X-69. \url{http://cfs.nrcan.gc.ca/pubwarehouse/pdfs/25591.pdf}
+Van Wagner, C.E. 1977. A method of computing fine fuel moisture content throughout the diurnal cycle. Environment Canada, Canadian Forestry Service, Petawawa Forest Experiment Station, Chalk River, Ontario. Information Report PS-X-69. \url{https://cfs.nrcan.gc.ca/pubwarehouse/pdfs/25591.pdf}
 }
 
 \seealso{

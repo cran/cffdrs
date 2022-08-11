@@ -47,7 +47,7 @@ Xianli Wang, Mike Wotton, Alan Cantin, Brett Moore, and Mike Flannigan
 }
 
 \references{
-Van Wagner, C.E. 1977. A method of computing fine fuel moisture content throughout the diurnal cycle. Environment Canada, Canadian Forestry Service, Petawawa Forest Experiment Station, Chalk River, Ontario. Information Report PS-X-69. \url{http://cfs.nrcan.gc.ca/pubwarehouse/pdfs/25591.pdf} 
+Van Wagner, C.E. 1977. A method of computing fine fuel moisture content throughout the diurnal cycle. Environment Canada, Canadian Forestry Service, Petawawa Forest Experiment Station, Chalk River, Ontario. Information Report PS-X-69. \url{https://cfs.nrcan.gc.ca/pubwarehouse/pdfs/25591.pdf} 
 }
 
 \seealso{
@@ -64,8 +64,8 @@ hour01 <- stack(hour01src)
 # Assign names to the layers:
 names(hour01)<-c("temp","rh","ws","prec")
 # (1) Default, based on the initial value: 
-foo<-hffmcRaster(hour01)
-plot(foo)
+\donttest{foo<-hffmcRaster(hour01)}
+\donttest{plot(foo)}
 ### Additional, longer running examples ###
 # (2) Based on previous day's hffmc:
 # load the test data for the second hour, namely hour02:

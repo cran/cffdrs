@@ -6,7 +6,7 @@
 Canadian Forest Fire Danger Rating System
 }
 \description{
-The cffdrs package allows R users to calculate the outputs of the two main components of the Canadian Forest Fire Danger Rating System (CFFDRS; \url{http://cwfis.cfs.nrcan.gc.ca/background/summary/fdr}): the Fire Weather Index (FWI) System (\url{http://cwfis.cfs.nrcan.gc.ca/background/summary/fwi}) and the Fire Behaviour Prediction (FBP) System (\url{http://cwfis.cfs.nrcan.gc.ca/background/summary/fbp}) along with additional methods created and used Canadian fire modelling. These systems are widely used internationally to assess fire danger (FWI System) and quantify fire behavior (FBP System).
+The cffdrs package allows R users to calculate the outputs of the two main components of the Canadian Forest Fire Danger Rating System (CFFDRS; \url{https://cwfis.cfs.nrcan.gc.ca/background/summary/fdr}): the Fire Weather Index (FWI) System (\url{https://cwfis.cfs.nrcan.gc.ca/background/summary/fwi}) and the Fire Behaviour Prediction (FBP) System (\url{https://cwfis.cfs.nrcan.gc.ca/background/summary/fbp}) along with additional methods created and used Canadian fire modelling. These systems are widely used internationally to assess fire danger (FWI System) and quantify fire behavior (FBP System).
 
 The FWI System (Van Wagner 1987) is based on the moisture content and the effect of wind of three classes of forest fuels on fire behavior. It consists of six components: three fuel moisture codes (Fire Fuel Moisture Code, Duff Moisture Code, Drought Code), and three fire behavior indexes representing rate of spread (Initial Spread Index), fuel consumption (Buildup Index), and fire intensity (Fire Weather Index). The FWI System outputs are determined from daily noon weather observations: temperature, relative humidity, wind speed, and 24-hour rainfall.
 
@@ -17,16 +17,16 @@ The FBP System (Forestry Canada Fire Danger Group 1992; Hirsch 1996) provides a 
 \tabular{ll}{
 Package: \tab cffdrs\cr
 Type: \tab Package\cr
-Version: \tab 1.8.18\cr
-Date: \tab 2020-06-03\cr
+Version: \tab 1.8.20\cr
+Date: \tab 2022-08-10\cr
 License: \tab GPL-2\cr
 }
 This package includes eleven functions. Seven functions, \code{\link{fwi}}, \code{\link{fwiRaster}}, \code{\link{hffmc}}, \code{\link{hffmcRaster}}, \code{\link{sdmc}}, \code{\link{gfmc}}, and \code{\link{wDC}} are used for FWI System calculation, whereas two functions, \code{\link{fbp}} and \code{\link{fbpRaster}} are used for FBP System calculation. One function, \code{\link{fireSeason}} determines fire season start and end dates based on weather. Two functions \code{\link{pros}} and \code{\link{lros}} are rate of spread and direction calculations across tiangles. These functions are not fully independent: their inputs overlap greatly and the users will have to provide FWI System outputs to calculate FBP System outputs. The fwi, fwiRaster, and sdmc functions calculate the outputs based on daily noon local standard time (LST) weather observations of temperature, relative humidity, wind speed, and 24-hour rainfall, as well as the previous day's moisture content. The hffmc, gfmc, and hffmcRaster functions calculate the outputs based on hourly weather observations of temperature, relative humidity, wind speed, and hourly rainfall, as well as the previous hour's weather conditions. The fbp and fbpRaster functions calculate the outputs of the FBP System based on given set of information about fire weather conditions (weather observations and their associated FWI System components), fuel type, and slope (optional).
 }
 \author{
-Xianli Wang, Alan Cantin, Marc-André Parisien, Mike Wotton, Kerry Anderson, Brett Moore, Tom Schiks, and Mike Flannigan
+Xianli Wang, Alan Cantin, Marc-André Parisien, Mike Wotton, Kerry Anderson, Brett Moore, Tom Schiks, Jordan Evens, and Mike Flannigan
 
-Maintainer: Alan Cantin \email{Alan.Cantin@Canada.ca}
+Maintainer: Alan Cantin \email{Alan.Cantin@NRCan-RNCan.gc.ca}
 }
 \references{
 1. Van Wagner, C.E. and T.L. Pickett. 1985. Equations and FORTRAN program for the Canadian Forest Fire Weather Index System. Can. For. Serv., Ottawa, Ont. For. Tech. Rep. 33. 18 p.
@@ -37,9 +37,9 @@ Maintainer: Alan Cantin \email{Alan.Cantin@Canada.ca}
 
 4. Hirsch K.G. 1996. Canadian Forest Fire Behavior Prediction (FBP) System: user's guide. Nat. Resour. Can., Can. For. Serv., Northwest Reg., North. For. Cent., Edmonton, Alberta. Spec. Rep. 7. 122p.
 
-5. Forestry Canada Fire Danger Group. 1992. Development and structure of the Canadian Forest Fire Behavior Prediction System. Forestry Canada, Ottawa, Ontario Information Report ST-X-3. 63 p. \url{http://cfs.nrcan.gc.ca/pubwarehouse/pdfs/10068.pdf}
+5. Forestry Canada Fire Danger Group. 1992. Development and structure of the Canadian Forest Fire Behavior Prediction System. Forestry Canada, Ottawa, Ontario Information Report ST-X-3. 63 p. \url{https://cfs.nrcan.gc.ca/pubwarehouse/pdfs/10068.pdf}
 
-6. Wotton, B.M., Alexander, M.E., Taylor, S.W. 2009. Updates and revisions to the 1992 Canadian forest fire behavior prediction system. Nat. Resour. Can., Can. For. Serv., Great Lakes For. Cent., Sault Ste. Marie, Ontario, Canada. Information Report GLC-X-10, 45p. \url{http://publications.gc.ca/collections/collection_2010/nrcan/Fo123-2-10-2009-eng.pdf}
+6. Wotton, B.M., Alexander, M.E., Taylor, S.W. 2009. Updates and revisions to the 1992 Canadian forest fire behavior prediction system. Nat. Resour. Can., Can. For. Serv., Great Lakes For. Cent., Sault Ste. Marie, Ontario, Canada. Information Report GLC-X-10, 45p. \url{https://publications.gc.ca/collections/collection_2010/nrcan/Fo123-2-10-2009-eng.pdf}
 
 7. Tymstra, C., Bryce, R.W., Wotton, B.M., Armitage, O.B. 2009. Development and structure of Prometheus: the Canadian wildland fire growth simulation Model. Nat. Resour. Can., Can. For. Serv., North. For. Cent., Edmonton, AB. Inf. Rep. NOR-X-417.
 }

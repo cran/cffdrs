@@ -66,7 +66,7 @@ fbpRaster <- function(input, output = "Primary", select=NULL, m=NULL, cores=1){
   output <- toupper(output)
   if("LAT" %in% names(input)){
     #register a sequential parallel backend
-    registerDoSEQ()
+    foreach::registerDoSEQ()
     #Get the specified raster cell values
     r <- .getValuesBlock_stackfix(input, nrows=nrow(input))
     #convert to data.frame
@@ -74,7 +74,7 @@ fbpRaster <- function(input, output = "Primary", select=NULL, m=NULL, cores=1){
     names(r) <- names(input)
   }else{
     #Convert the raster to points and insert into a data.frame
-    r <- as.data.frame(rasterToPoints(input))
+    r <- as.data.frame(raster::rasterToPoints(input))
     #Rename the latitude field
     names(r)[names(r) == "y"] <- "LAT"
     #Check for valid latitude
@@ -112,10 +112,10 @@ fbpRaster <- function(input, output = "Primary", select=NULL, m=NULL, cores=1){
   #  only those outputs
   if (!is.null(select)){
     out <- out0 <- input[[1]]
-    values(out) <- FBP[, select[1]]
+    raster::values(out) <- FBP[, select[1]]
     if (length(select) > 1){
       for (i in 2:length(select)){
-        values(out0) <- FBP[,select[i]]
+        raster::values(out0) <- FBP[,select[i]]
         out <- stack(out, out0)
       }
     }
@@ -125,20 +125,20 @@ fbpRaster <- function(input, output = "Primary", select=NULL, m=NULL, cores=1){
   }else if (output == "PRIMARY" | output == "P") {
     message("FD = 1,2,3 representing Surface (S),Intermittent (I), and Crown (C) fire")
     out <- out0 <- input[[1]]
-    values(out) <- FBP[,primaryNames[1]]
+    raster::values(out) <- FBP[,primaryNames[1]]
     for (i in 2:length(primaryNames)){
-      values(out0) <- FBP[, primaryNames[i]]
-      out <- stack(out,out0)
+      raster::values(out0) <- FBP[, primaryNames[i]]
+      out <- raster::stack(out,out0)
     }
     names(out)<-primaryNames
   #If caller specified Secondary outputs, then create raster stack that contains
   #  only secondary outputs
   }else if(output == "SECONDARY" | output == "S") {
     out <- out0 <- input[[1]]
-    values(out) <- FBP[, secondaryNames[1]]
+    raster::values(out) <- FBP[, secondaryNames[1]]
     for (i in 2:length(secondaryNames)){
-      values(out0) <- FBP[, secondaryNames[i]]
-      out <- stack(out, out0)
+      raster::values(out0) <- FBP[, secondaryNames[i]]
+      out <- raster::stack(out, out0)
     }
     names(out)<-secondaryNames
   #If caller specified All outputs, then create a raster stack that contains
@@ -146,10 +146,10 @@ fbpRaster <- function(input, output = "Primary", select=NULL, m=NULL, cores=1){
   }else if(output == "ALL" | output == "A") {
     message("FD = 1,2,3 representing Surface (S),Intermittent (I), and Crown (C) fire")
     out <- out0 <- input[[1]]
-    values(out) <- FBP[, allNames[1]]
+    raster::values(out) <- FBP[, allNames[1]]
     for (i in 2:length(allNames)){
-      values(out0) <- FBP[, allNames[i]]
-      out <- stack(out, out0)
+      raster::values(out0) <- FBP[, allNames[i]]
+      out <- raster::stack(out, out0)
     }
     names(out) <- allNames
   }
