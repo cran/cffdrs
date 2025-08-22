@@ -285,17 +285,10 @@ slope_adjustment <- function(
     ),
     ISF
   )
-  ifelse(
-    FUELTYPE %in% c("NF", "WA"),
-    {
-      return(list(
-        WSV = NA,
-        RAZ = NA
-      ))
-    },
-    {
+  # Initialize RAZ and WSV
+  RAZ <- WSV <- rep(-99, length(FFMC))
   # Eq. 46 (FCFDG 1992)
-  m <- 147.27723 * (101 - FFMC) / (59.5 + FFMC)
+  m <- FFMC_COEFFICIENT * (101 - FFMC) / (59.5 + FFMC)
   # Eq. 45 (FCFDG 1992) - FFMC function from the ISI equation
   fF <- 91.9 * exp(-.1386 * m) * (1 + (m**5.31) / 4.93e7)
   # Eqs. 44a, 44d (Wotton 2009) - Slope equivalent wind speed
@@ -314,17 +307,15 @@ slope_adjustment <- function(
   WSY <- WS * cos(WAZ) + WSE * cos(SAZ)
   # Eq. 49 (FCFDG 1992) - the net effective wind speed
   WSV <- sqrt(WSX * WSX + WSY * WSY)
+  WSV <- ifelse(FUELTYPE %in% c("NF", "WA"), NA, WSV)
   # Eq. 50 (FCFDG 1992) - the net effective wind direction (radians)
   RAZ <- acos(WSY / WSV)
   # Eq. 51 (FCFDG 1992) - convert possible negative RAZ into more understandable
   # directions
   RAZ <- ifelse(WSX < 0, 2 * pi - RAZ, RAZ)
-  return(list(
-    WSV = WSV,
-    RAZ = RAZ
-  ))
-}
-  )
+  RAZ <- ifelse(FUELTYPE %in% c("NF", "WA"), NA, RAZ)
+  return(list(WSV = WSV,
+              RAZ = RAZ))
 }
 
 .Slopecalc <- function(
